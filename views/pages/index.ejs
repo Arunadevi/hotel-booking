@@ -1,56 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pearwoods</title>
+	<link href="img/favicon.jpg" rel="icon">
+	Pear graphic by <a href="http://picol.org">Picol</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+    <!-- Bootstrap Core CSS -->
+   
+
 <head>
   <% include ../partials/header.ejs %>
 </head>
 
+ </head>
+
 <body>
 
-  <% include ../partials/nav.ejs %>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >Book my Stay</a>
+            </li>
+            <!-- <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li> -->
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Gallery</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Map</a>
+            </li>
+        </ul>
+    </nav>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Node on Heroku</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started with Node</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Pearwoods</h1>
+            <h3>In the valley of pear trees...</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Book your stay</a>
+        </div>
+    </header>
 
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide to learn more!</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Availability calendar</h2>
+                    <p class="lead">Call now to book</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2 style="visibility: hidden;">Our Services</h2>
+                    <hr class="small" style="visibility: hidden;">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="visibility: hidden;">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" style="visibility: hidden;">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout" style="display:none;">
+        <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Gallery</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a style="display:none;" href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d62817.13707876186!2d77.47595894962429!3d10.255842886324253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x3b0766e39dde568d%3A0xf78a92876696563a!2sPilakavi+Rd%2C+Kodaikanal%2C+Tamil+Nadu+624101!3m2!1d10.2557603!2d77.5109787!4m0!5e0!3m2!1sen!2sin!4v1459168867688" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <br />
+        <small>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.1251148116953!2d77.49679091421105!3d10.251491971467559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0766f1f8ce2335%3A0xe632d05cedd04091!2sKurinji+Andavar+Temple+Rd%2C+Kodaikanal%2C+Tamil+Nadu+624101!5e0!3m2!1sen!2sin!4v1459168053479"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4 style="display:none;"><strong>Start Bootstrap</strong>
+                    </h4>
+                    <p>Pearwoods, Pilakavi Road, Kodaikanal, TamilNadu.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (+91) 94421 33418</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="jayaprakash.arthanareeswaran@gmail.com">jayaprakash.arthanareeswaran@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Pearwoods 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
 </body>
+
 </html>
