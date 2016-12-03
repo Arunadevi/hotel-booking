@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <meta name="google-site-verification" content="4tr9_9ZR8C1RNHrgAuBxWB_4xA4HM8uoJEjpwpqHgxw" />
     <title>Pearwoods</title>
 	<link href="img/favicon.jpg" rel="icon">
-	Pear graphic by <a href="http://picol.org">Picol</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+	
     <!-- Bootstrap Core CSS -->
    
 
@@ -115,7 +115,11 @@
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <ul>
+<% users.forEach(function(user){ %>
+<%= user.name %>
+<% })%>
+</ul>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
@@ -290,6 +294,7 @@
         });
     });
     </script>
+    Pear graphic by <a href="http://picol.org">Picol</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
 
 </body>
 
