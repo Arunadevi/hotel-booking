@@ -33,7 +33,12 @@ h3 {
     padding: 0;
     font-size: 10.5em;
     font-weight: 700;
-    color: darkorange;
+    /*color: rgba(255, 140, 0, 0.73);*/
+    color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
     font-family:'Monotype Corsiva W01';
 }
 
@@ -164,7 +169,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.JPG) no-repeat center center scroll;
+    background: url(../img/download1.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
