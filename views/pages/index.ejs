@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,16 +9,10 @@
     <meta name="author" content="">
     <meta name="google-site-verification" content="4tr9_9ZR8C1RNHrgAuBxWB_4xA4HM8uoJEjpwpqHgxw" />
     <title>Pearwoods</title>
-	<link href="img/favicon.jpg" rel="icon">
-	
-    <!-- Bootstrap Core CSS -->
-   
-
-<head>
-  <% include ../partials/header.ejs %>
+	<link href="img/favicon.ico" rel="icon">
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/d4b84503-539a-4ed8-941b-41143a7f5888.js"></script>
+    <% include ../partials/header.ejs %>
 </head>
-
- </head>
 
 <body>
 
@@ -29,10 +22,7 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                <a href="#top"  onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
                 <a href="#about" onclick = $("#menu-close").click(); >Book my Stay</a>
@@ -108,7 +98,7 @@
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6" style="visibility: hidden;">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -116,16 +106,16 @@
                             </span>
                                 <h4>
                                     <ul>
-<% users.forEach(function(user){ %>
-<%= user.name %>
-<% })%>
-</ul>
+                                        <% users.forEach(function(user){ %>
+                                        <%= user.name %>
+                                        <% })%>
+                                    </ul>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6" style="visibility: hidden;">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>

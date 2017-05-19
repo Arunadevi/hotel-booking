@@ -16,6 +16,12 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+h3 {
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 40px;
+    font-weight: 600;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -25,10 +31,12 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
+    font-size: 10.5em;
     font-weight: 700;
     color: darkorange;
+    font-family:'Monotype Corsiva W01';
 }
+
 
 /* Custom Button Styles */
 
